@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douglas - Front End Developer & Creative</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Douglas</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <h1 class="hero-title">Douglas</h1>
+            <h2 class="hero-subtitle">Front End Developer & Creative</h2>
+            <p class="hero-bio">I craft beautiful and functional web experiences that bring ideas to life. Passionate about design, code, and creating meaningful digital solutions.</p>
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I'm a front-end developer with a passion for creating intuitive and visually appealing web applications. With experience in HTML, CSS, and JavaScript, I combine technical expertise with creative design thinking to build digital experiences that users love.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>analytics</li>
+                <li>Figma</li>
+                <li>Git</li>
+                <li>VSCode</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <article class="project-card">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A modern e-commerce website built with HTML, CSS, and JavaScript featuring product listings, shopping cart functionality, and responsive design for all devices.</p>
+                    <a href="#">View Project</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Personal Blog</h3>
+                    <p>A clean and minimalist blog platform showcasing articles and creative writing. Built with semantic HTML and styled with custom CSS for an optimal reading experience.</p>
+                    <a href="#">View Project</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>This responsive portfolio site designed to showcase work and skills. Features smooth navigation, modern design principles, and accessibility best practices throughout.</p>
+                    <a href="#">View Project</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out! You can contact me via email or connect with me on social media.</p>
+
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message here..." rows="5"></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+            <div id="success-message" class="success-message" style="display: none;">
+                <p>Thanks! I'll get back to you soon</p>
+            </div>
+
+            <address>
+                <p>Email: <a href="mailto:douglas@example.com">douglas@example.com</a></p>
+                <ul>
+                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Made by Douglas Opoku. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
